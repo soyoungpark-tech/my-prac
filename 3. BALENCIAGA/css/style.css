@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* reset, base */
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --hover-color: ;
+    /* z-index */
+    --zindex-header: 100;
+    --zindex-gnb: 200;
+    --zindex-toggle: 300;
+    --zindex-dimmed: 99;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+/* common */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
