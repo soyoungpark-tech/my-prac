@@ -1,9 +1,11 @@
 @charset "utf-8";
 /* reset, base */
 :root {
-    --primary-color: ;
-    --secondary-color: ;
-    --hover-color: ;
+    --primary-color: #0e1111;
+    --secondary-color: #ffffff;
+    --hover-color: #ffffff;
+    --hover-background-color: #0e1111;
+    --line-color: #DDDDDD;
     /* z-index */
     --zindex-header: 100;
     --zindex-gnb: 200;
@@ -22,6 +24,9 @@ a {
 ul {
     list-style: none;
 }
+img {
+    max-width: 100%;
+}
 /* common */
 .flex-center {
     display: flex;
@@ -30,4 +35,47 @@ ul {
 }
 .flex {
     display: flex;
+}
+.icon {
+    width: 32px;
+    vertical-align: baseline;
+}
+/* layout */
+.main-inner {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+/* header */
+header {
+}
+.main-logo {
+    /* position: relative; */
+    border-bottom: 1px solid var(--line-color);
+}
+.main-logo img {
+    width: 260px;
+    margin: 10px auto;
+}
+.gnb__container {
+    width: 1100px;
+    margin: 0px auto;
+}
+.gnb {
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    background: var(--secondary-color);
+    width: 100%;
+}
+.gnb li:nth-child(1) .icon,
+.gnb li:nth-child(5) .icon{
+    margin-top: -5px;
+}
+.gnb__subbox {
+    position: absolute;
+    margin-top: 20px;
+    display: none;
+    border: 1px solid #000;
 }
