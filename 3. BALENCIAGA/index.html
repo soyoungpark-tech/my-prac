@@ -27,6 +27,7 @@
     </div>
 
 
+
     <div class="gnb__container">
         <ul class="gnb flex">
             <li class="gnb__item">
@@ -165,7 +166,7 @@
 <!-- section.community -->
 <section class="community main-inner" id="community">
     <h1>BALENCIAGA COMMUNITY</h1>
-    <div class="community__box main-inner flex">
+    <div class="community__box main-inner flex-center">
         <div class="community__gallery">
             <img src="./img/community-img-1.jpg" alt="communityPhoto1">
             <img src="./img/community-img-2.jpg" alt="communityPhoto2">
@@ -174,25 +175,25 @@
         </div>
         <div class="community__desc flex">
             <a href="#">
-                <div class="community__desc_text flex-center">
+                <div class="community__desc_text flex-center li-box-style">
                     <h1>발렌시아가 자이언트 타탄 체크 자이언트 로고 더블 울 스카프 그린</h1>
                     <p>820,000 구매하기</p>
                 </div>
             </a>
             <a href="#">
-                <div class="community__desc_text flex-center">
+                <div class="community__desc_text flex-center li-box-style">
                     <h1>발렌시아가 로고 레드 포프린 바람막이 자켓</h1>
                     <p>2,249,900 구매하기</p>
                 </div>
             </a>
             <a href="#">
-                <div class="community__desc_text flex-center">
+                <div class="community__desc_text flex-center li-box-style">
                     <h1>발렌시아가 브랙 스퀘어 카프스킨 토트백</h1>
                     <p>1,765,500 구매하기</p>
                 </div>
             </a>
             <a href="#">
-                <div class="community__desc_text flex-center">
+                <div class="community__desc_text flex-center li-box-style">
                     <h1>발렌시아가 클래식 베이스볼 캡</h1>
                     <p>445,000 구매하기</p>
                 </div>
@@ -201,69 +202,94 @@
     </div>
 </section>
 <!-- section.second-banner -->
-<section class="second__banner" id="secondBanner"></section>
+<section class="second__banner" id="secondBanner">
     <img src="./img/second-banner.jpg" alt="SecondBanner">
 </section>
 <!-- section.category -->
-<section class="category" id="category">
-    <ul>
+<section class="category main-inner" id="category">
+    <ul class="flex-center">
         <li>
             <!-- before : AGE -->
-            <img src="./img/category-img-1.jpg" alt="categoryImg1">
-            <h2>내 친구들은 어떤 옷을 입을까?</h2>
+            <a href="#">
+                <img src="./img/category-img-1.jpg" alt="categoryImg1" class="category__before">
+                <h2>AGE</h2>
+                <h1>내 친구들은 어떤 옷을 입을까?</h1>
+            </a>
         </li>
         <li> 
             <!-- before : SALE -->
-            <img src="./img/category-img-2.jpg" alt="categoryImg2">
-            <h2>발렌시아가는 여름 세일중!</h2>
+            <a href="#">
+                <img src="./img/category-img-2.jpg" alt="categoryImg2">
+                <h2>SALE</h2>
+                <h1>발렌시아가는 여름 세일 중!</h1>
+            </a>
         </li>
         <li>
             <!-- before : NEW -->
-            <img src="./img/category-img-3.jpg" alt="categoryImg3">
-            <h2>2021 여름 컬렉션 구경하러가기</h2>
+            <a href="#">
+                <img src="./img/category-img-3.jpg" alt="categoryImg3">
+                <h2>NEW</h2>
+                <h1>2021 여름 컬렉션 구경하러가기</h1>
+            </a>
         </li>
     </ul>
 </section>
 <!-- section.recommend -->
-<section class="recommend" id="recommend">
-    <ul>
-        <li>
-            <div class="recommend__img">
+<section class="recommend main-inner" id="recommend">
+    <ul class="flex">
+        <li class="li-box-style">
+            <div>
                 <img src="./img/recommend-img-1.jpg" alt="recommendImg1">
             </div>
             <div class="recommend__desc">
-                <h2>
-                    발렌시아가의 새로운 혁명
+                <h1>
                     <br>
-                    TRIPLE S CLEAR SOLE
-                </h2>
-                <P>
+                    <b>TRIPLE S CLEAR SOLE</b>
+                    <br>
+                    <br>
                     섬세한 컬러와 텍스쳐의 조화로
                     아이템에 모던한 분위기를
                     더하고 브랜드의 대담한
                     스타일을 드러낸 스니커즈
-                </P>
+                    <br>
+                    <br>
+                    <br>
+                    <b><a href="#">더 알아보기</a></b>
+                    <br>
+                </h1>
             </div>
         </li>
-        <li>
-            <!-- before : NEW (Black Color Box) -->
-            <div class="recommend__img">
-                <img src="./img/recommend-img-2.jpg" alt="recommendImg2">
-            </div>
-            <!-- after : White Color Box -->
-            <h2>TRIPLE S 트레이너 슈즈</h2>
-            <h3>&#92; 1,250,000</h3>
+        <li class="flex li-box-style">
+                <span>NEW</span>
+                <div class="recommend__img">
+                    <a href="#">
+                        <img src="./img/recommend-img-2.jpg" alt="recommendImg2">
+                    </a>
+                </div>
+                <!-- after : White Color Box -->
+                <p>
+                    TRIPLE S 트레이너 슈즈
+                    <br>
+                    1,250,000원
+                </p>
+
+            <!-- </a> -->
         </li>
-        <li>
-            <!-- before : BEST SELLER (Black Color Box) -->
+        <li class="flex li-box-style">
+            <span>BEST SELLER</span>
             <div class="recommend__img">
-                <img src="./img/recommend-img-3.jpg" alt="recommendImg3">
+                <a href="#">
+                    <img src="./img/recommend-img-3.jpg" alt="recommendImg3">
+                </a>
             </div>
             <!-- after : White Color Box -->
             <!-- after : Black Color Box -->
             <!-- after : Pink Color Box -->
-            <h2>SPEED 2.0 스니커즈</h2>
-            <h3>&#92; 1,340,000</h3>
+            <p>
+                SPEED 2.0 스니커즈
+                <br>
+                1,340,000원
+            </p>
         </li>
     </ul>
 </section>
@@ -272,10 +298,10 @@
     <img src="./img/sub-banner.jpg" alt="subBanner">
 </section>
 <!-- section.online-service -->
-<section class="online-service">
-    <ul>
-        <li>
-            <i class="uil uil-gift"></i>
+<section class="online-service footer-inner">
+    <ul class="flex-center">
+        <li class="li-box-style">
+            <i class="uil uil-dropbox"></i>
             <h3>무료배송</h3>
             <p>
                 발렌시아가는 모든 주문 건에 대해 무료로 배송 서비스를 제공합니다.
@@ -286,7 +312,7 @@
                 고객 서비스 센터로 문의
             </p>
         </li>
-        <li>
+        <li class="li-box-style">
             <i class="uil uil-gift"></i>
             <h3>선물 포장</h3>
             <p>
@@ -296,7 +322,7 @@
                 내부 정책으로 인하여 패키지 구성이 변경되어 더 이상 쇼핑백이 제공되지 않습니다.
             </p>
         </li>
-        <li>
+        <li class="li-box-style">
             <i class="uil uil-redo"></i>
             <h3>7일 이내 무료 반품</h3>
             <p>
@@ -307,47 +333,47 @@
                 <br>
                 반품 날짜 도착일로부터 영업일 기준 3일 이내 진행
             </p>
-            <p>
-                *반품 접수
-                <br>
-                고객 서비스 센터로 문의
-            </p>
         </li>
     </ul>
 </section>
 <!-- footer -->
 <footer>
-    <ul class="footer__item">
+    <ul class="footer__content footer-inner flex-center">
         <li>
-            <img src="./img/main-logo.png" alt="main-logo">
+            <img src="./img/main-logo-white.png" alt="main-logo" class="main-logo-white">
             <h2>서울 강남구 도산대로 460 (청담동, 청담건물) 5층</h2>
         </li>
-        <li>
-            <h2>고객센터</h2>
-            <ul>
-                <li>이메일 문의</li>
-                <li>전화 문의</li>
-            </ul>
-        </li>
-        <li>
-            <ul>
-                <li>
-                    <h2>뉴스레터 구독</h2>
-                    <input type="search" name="searchBox" id="searchBox">
-                    <button>신청하기</button>
-                </li>
-                <li>
-                    <h2>SNS</h2>
-                    <div class="footer__icon">
-                        <i class="uil uil-thumbs-up"></i>
-                        <i class="uil uil-twitter-alt"></i>
-                        <i class="uil uil-instagram"></i>
-                        <!-- <img src="./img/icon-facebook.png" alt="facebookImg" class="icon"> -->
-                        <!-- <img src="./img/icon-twitter.png" alt="twitterImg" class="icon"> -->
-                        <!-- <img src="./img/icon-instagram.png" alt="instagramImg" class="icon"> -->
-                    </div>
-                </li>
-            </ul>
+        <li class="footer__item flex-center">
+            <div class="footer__service_center">
+                <h2>고객센터</h2>
+                <ul>
+                    <li class="li-box-style">
+                        <a href="#">
+                            이메일 문의
+                        </a>
+                    </li>
+                    <li class="li-box-style">
+                        <a href="#">
+                            전화 문의
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__custom_service flex">
+                        <div class="footer__news">
+                            <h2 class="footer__h2_margin">뉴스레터 구독</h2>
+                            <input type="search" name="searchBox" id="searchBox">
+                            <button>신청하기</button>
+                        </div>
+                        <div class="footer__icon">
+                            <h2 class="footer__h2_margin">SNS</h2>
+                            <div class="footer__icon_items">
+                                <i class="uil uil-thumbs-up"></i>
+                                <i class="uil uil-twitter-alt"></i>
+                                <i class="uil uil-instagram"></i>
+                            </div>
+                        </div>
+            </div>
         </li>
     </ul>
 </footer>
