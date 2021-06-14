@@ -1,0 +1,170 @@
+@charset "utf-8";
+
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+:root {
+
+/* ----------------------- main color ----------------------- */
+/* 
+    hsl(hue, saturation, lightness) 
+    hue(색조) : 0 ~ 360 ( 0: 빨간색, 120: 녹색, 240: 파란색 )
+    saturation(채도) : 0 ~ 100 (0: 회색, 100: 원색)
+    lightness(명도) : 0 ~ 100 (0: 검정색, 50: 중간, 100: 흰색)
+*/
+    --hue-color: 200;
+
+/* ----------------------- colors ----------------------- */
+    --primary-color: hsl(var(--hue-color), 69%, 61%);
+    --primary-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
+    --black-color: hsl(var(--hue-color), 8%, 15%);
+    --gray-color: hsl(var(--hue-color), 8%, 45%);
+    --white-color: #FFF;
+    --body-color: hsl(var(--hue-color), 60%, 99%);
+
+/* ----------------------- typography ----------------------- */
+    --body-font: 'Poppins', sans-serif;
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .813rem;
+
+/* ----------------------- font-weight ----------------------- */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+/* ----------------------- margin bottom ----------------------- */
+    --mb-0-25: .25rem;
+    --mb-0-5: .5rem;
+    --mb-0-75: .75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --mb-3: 3rem;
+
+/* ----------------------- z index ----------------------- */
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+/* ----------------------- dark-theme ----------------------- */
+body.dark-theme {
+    --black-color: hsl(var(--hue-color), 8%, 95%); /* 흰색으로 바뀝니다 */
+    --body-color: hsl(var(--hue-color), 28%, 12%); /* 어두운 색으로 바뀝니다 */
+}
+
+/* ----------------------- reset ----------------------- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--gray-color);
+}
+h1,h2,h3,h4 {
+    color: var(--black-color);
+    font-weight: var(--font-semi-bold);
+}
+h1 {
+    font-size: var(--h1-font-size);
+}
+h2 {
+    font-size: var(--h2-font-size);
+}
+h3 {
+    font-size: var(--h3-font-size);
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+button {
+    cursor: pointer;
+}
+
+/* ========================= reusable, common css ========================= */
+.section__title--wrap {
+    text-align: center;
+}
+.section__title {
+    font-size: var(--h1-font-size);
+}
+.section__subtitle {
+    font-size: var(--normal-font-size);
+    color: var(--gray-color);
+    margin-bottom: var(--mb-3);
+}
+.button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 1rem;
+    border-radius: .5rem;
+    font-weight: var(--font-medium);
+}
+
+/* ========================= layout ========================= */
+.inner {
+    min-width: 340px;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 2rem 0 4rem;
+}
+.flex {
+    display: flex;
+}
+
+/* ========================= header ========================= */
+.header {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    z-index: var(--z-fixed);
+    border-bottom: 1px solid var(--white-color);
+    /* background: url(../img/main-banner1.jpg); */
+}
+.header-inner {
+    max-width: 100%;
+    height: 5rem;
+    padding: 0 2rem;
+    /* margin: 0 auto; */
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white-color);
+}
+.nav__container {
+    margin-left: auto;
+}
+.nav__list {
+    width: 500px;
+    justify-content: space-between;
+}
+.nav__item:hover,
+.nav__item.actice
+{
+    color: var(--primary-color);
+}
+
+
+/* ========================= home ========================= */
+.home {
+    background: url(../img/main-banner1.jpg);
+    width: 100%;
+    height: 100vh;
+}
