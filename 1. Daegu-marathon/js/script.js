@@ -20,16 +20,17 @@ $(function(){
         // })
 
         /* nav submenu */
-        var $navbarItem = $('.nav__item'),
-                $navbarMenu = $('.navbar__menu'),
-                $subMenu = $('.navbar__submenu');
-            console.log($subMenu)
-            $subMenu.hide();
+        var $navItem = $('.nav__item'),
+            $navMenu = $('.nav__link'),
+            $subMenu = $('.nav__submenu');
+        console.log($subMenu);
+        $subMenu.hide();
 
-            $navbarItem.mouseenter(function(){
-                $(this).children('.nav__submenu').stop().slideDown();
-            });
-            $navbarItem.mouseleave(function(){
-                $(this).children('.nav__submenu').stop().slideUp();
-            });
+        $navItem.mouseenter(function(){
+            $(this).children('.nav__submenu').stop().slideDown();
+        });
+        $navItem.mouseleave(function(){
+            $(this).children('.nav__submenu').stop().slideUp();
+        });
+
 })
