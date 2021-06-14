@@ -284,18 +284,16 @@ footer {
   background: var(--primary-color);
   color: var(--secondary-color);
 }
-.recommend ul li p {
-  font-size: 1.2rem;
-}
 .recommend__desc {
+  padding: .8rem;
   background: var(--primary-color);
   color: var(--secondary-color);
 }
 .recommend__desc b:nth-of-type(1) {
-  font-size: 1.2rem;
+  font-weight: bold;
 }
 .recommend__desc b:nth-of-type(2) {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-decoration: underline;
 }
 
@@ -317,8 +315,12 @@ footer {
   padding: 10px;
   height: 300px;
 }
+.online-service ul li h3 {
+  font-weight: bold;
+}
 .online-service ul li p {
   text-align: left;
+  font-size: .9rem;
 }
 /* footer */
 footer ul li {
@@ -350,7 +352,6 @@ footer ul li {
   height: 150px;
   flex-direction: column;
   justify-content: space-between;
-  /* border: 1px solid #fff; */
 }
 .footer__h2_margin {
   margin-bottom: var(--margin-1);
@@ -359,7 +360,6 @@ footer ul li {
   margin-left: -5px;
   height: 18px;
   font-size: 0.5rem;
-  vertical-align: top;
 }
 .footer__icon_items {
   display: flex;
