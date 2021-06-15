@@ -19,11 +19,8 @@
 <title>참가신청</title>
 </head>
 <body>
-
-    <h1>참가신청 페이지입니다</h1>
-
     <!-- ======================= header ======================= -->
-    <header class="header fixed" id="header">
+    <header class="header fixed header__bg_color" id="header">
         <div class="header-inner flex">
             <a href="../index.html">
                 <img src="../img/logo_white.png" alt="logo-img">
@@ -72,12 +69,18 @@
             </div>
         </div>
     </header>
-    <!-- ========================= footer ========================= -->
-    <section class="apply__container" id="apply__container">
+    
+        <!-- ========================= apply title ========================= -->
+        <section class="apply__title main-inner" id="apply__title">
+            <h1 class="main-title main-title-mt">참가신청 페이지입니다</h1>
+        </section>
 
-        <fieldset>
-            <legend>입사지원 정보</legend>
-            <p>
+    <!-- ========================= apply form ========================= -->
+    <section class="apply__container section__margin" id="apply__container">
+
+        <fieldset class="inner">
+            <legend>참가 신청</legend>
+            <p class="margin__l">
                 <label for="id" required>아이디(e-mail) :</label>
                 <input type="text"> @ 
                 <select name="email" id="email">
@@ -86,11 +89,11 @@
                     <option value="gmail">gmail.com</option>
                 </select>
             </p>
-            <p>
+            <p class="main-title-mt margin__l">
                 <label for="password" required>비밀번호 : </label>
                 <input type="text">
             </p>
-            <p>
+            <p class="main-title-mt margin__l">
                 <label for="number">휴대전화 :</label>
                 <select name="PH" id="PH">
                     <option value="">통신사 선택</option>
@@ -99,12 +102,12 @@
                 </select>
                 <input type="text"> - <input type="text"> - <input type="text">
             </p>
-            <p>
+            <p class="main-title-mt margin__l">
                 <label for="position" required>직군 :</label>
                 <input type="radio" name="position" id="designer"> <label for="designer">디자이너</label>
                 <input type="radio" name="position" id="dev"> <label for="dev">개발자</label>
             </p>
-            <p>
+            <p class="main-title-mt margin__l">
                 <label for="">희망 근무지(*복수선택 가능) :</label>
                 <input type="checkbox" name="wanted" id="la"><label for="la"> LA</label>
                 <input type="checkbox" name="wanted" id="tokyo"><label for="tokyo"> Tokyo</label>
