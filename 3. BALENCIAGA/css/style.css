@@ -114,10 +114,8 @@ footer {
   position: absolute;
   width: 100%;
   left: 0;
-  /* border: 1px solid #000; */
   top: 100%;
   display: flex;
-  /* height: 10px; */
   background: var(--secondary-color);
 }
 .navbar__submenu:nth-child(3) {
@@ -364,6 +362,9 @@ footer ul li {
   position: relative;
   margin-bottom: var(--margin-1);
 }
+/* .mobile_logo_img_white {
+  display: none;
+} */
 .footer__content:after {
   content: "";
   position: absolute;
@@ -420,3 +421,101 @@ footer ul li {
 .footer__icon_items a:nth-child(3):hover {
   color: #c32aa3;
 }
+
+/* ========================= Tablet ========================= */
+@media (max-width: 768px){
+
+  /*
+      글로벌 변수를 통해 폰트 사이즈를 한번에 반응형에 적용하게 됩니다
+  */
+  :root {
+      --h1-font-size: 1.5rem;
+      --h2-font-size: 1.25rem;
+      --h3-font-size: 1.125rem;
+      --big-font-size: 2rem;
+      --normal-font-size: .938rem;
+      --small-font-size: .75rem;
+  }
+  /* .inner {
+      padding: 2rem 2rem;
+  } */
+
+  /* ======================== header ======================== */
+header {
+  width: 768px;
+}
+.nav__container {
+  width: 768px;
+}
+  /* ======================== community ======================== */
+  .community__box {
+    width: 100%;
+  }
+  .community__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .community__gallery a {
+    margin: 5px;
+  }
+  .community__gallery img {
+    width: 250px;
+  }
+.community__desc {
+  display: none;
+}
+  /* ========================= category ========================= */
+.category {
+  width: 100%;
+}
+.category ul {
+  flex-direction: column;
+}
+.category ul li {
+  margin-bottom: var(--margin-0-5);
+}
+  /* ========================= recommend ========================= */
+  .recommend {
+    display: none;
+  }
+  /* ========================= online-service ========================= */
+.online-service {
+  width: 100%;
+}
+.online-service ul li {
+  margin: 5px;
+}
+/* ========================= footer ========================= */
+footer {
+  width: 100%;
+  background: #000;
+}
+.mobile_logo_img_white {
+  background: #000;
+  padding: var(--margin-2);
+  display: block;
+} 
+.mobile_logo_img_white h2 {
+  text-align: center;
+}
+.footer__content {
+  display: none;
+}
+
+
+/* ========================= Mobile ========================= */
+@media (max-width: 568px){
+
+  /* ====================== Skills ===================== */
+
+  /* ==================== Qualification =============== */
+
+
+  /* ==================== Services =================== */
+
+
+  /* =================== Portfolio ================== */
+
+  /* ===================== Footer =================== */
+
