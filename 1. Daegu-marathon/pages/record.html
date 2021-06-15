@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- CSS -->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+<!-- jQuery가 js 제일 상단에 위치 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- JS -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- 우리가 작성하는 js는 제일 아래 -->
+<script src="../js/script.js"></script>
+<title>기록조회</title>
+</head>
+<body>
+
+    <h1>기록조회 페이지입니다</h1>
+
+    <!-- ======================= header ======================= -->
+    <header class="header fixed" id="header">
+        <div class="header-inner flex">
+            <a href="../index.html">
+                <img src="../img/logo_white.png" alt="logo-img">
+            </a>
+            <div class="nav__container">
+                <ul class="nav__list flex">
+                    <li class="nav__item">
+                        <a href="./guid.html" data-link="#home" class="nav__link">
+                            대회안내
+                        </a>
+                        <div class="nav__submenu">
+                            <a href="./guid.html">인사말</a>
+                            <a href="./guid.html">후원 및 협력</a>
+                            <a href="./guid.html">참가자 유의사항</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./apply.html" data-link="#home" class="nav__link">
+                            참가신청
+                        </a>
+                        <div class="nav__submenu">
+                            <a href="./apply.html">참가신청</a>
+                            <a href="./apply.html">참가 신청 안내</a>
+                            <a href="./apply.html">참가 신청 조회</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./course.html" data-link="#home" class="nav__link">
+                            코스
+                        </a>
+                        <div class="nav__submenu">
+                            <a href="./course.html">하프코스</a>
+                            <a href="./course.html">10km</a>
+                            <a href="./course.html">마스터즈 부문</a>
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <a href="./record.html" data-link="#home" class="nav__link">
+                            대회기록
+                        </a>
+                        <div class="nav__submenu">
+                            <a href="./record.html">기록조회</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ========================= record ========================= -->
+    <section class="record">
+        <fieldset>
+            <legend>입사지원 정보</legend>
+            <p>
+                <label for="id" required>아이디(e-mail) :</label>
+                <input type="text"> @ 
+                <select name="email" id="email">
+                    <option value="">선택</option>
+                    <option value="naver">naver.com</option>
+                    <option value="gmail">gmail.com</option>
+                </select>
+            </p>
+            <p>
+                <label for="password" required>비밀번호 : </label>
+                <input type="text">
+            </p>
+            <p>
+                <label for="number">휴대전화 :</label>
+                <select name="PH" id="PH">
+                    <option value="">통신사 선택</option>
+                    <option value="sk">SK</option>
+                    <option value="kt">KT</option>
+                </select>
+                <input type="text"> - <input type="text"> - <input type="text">
+            </p>
+            <p>
+                <label for="position" required>직군 :</label>
+                <input type="radio" name="position" id="designer"> <label for="designer">디자이너</label>
+                <input type="radio" name="position" id="dev"> <label for="dev">개발자</label>
+            </p>
+            <p>
+                <label for="">희망 근무지(*복수선택 가능) :</label>
+                <input type="checkbox" name="wanted" id="la"><label for="la"> LA</label>
+                <input type="checkbox" name="wanted" id="tokyo"><label for="tokyo"> Tokyo</label>
+                <input type="checkbox" name="wanted" id="lon"><label for="lon"> London</label>
+                <input type="checkbox" name="wanted" id="sing"><label for="sing"> Singapol</label>
+            </p>
+        </fieldset><br>
+        <input type="submit" value="입사지원 완료">
+    
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ========================= footer ========================= -->
+    <footer class="footer" id="footer">
+        <address>
+            주최 : 대구광역시, 대한육상연맹 | 주관 : 대구광역시체육회, 대구육상연맹
+            <br>
+            (41542) 대구 북구 연암로 40(산격동) 113동 1층 대구국제마라톤
+            <br>
+            <a href="tel:053-355-3872">TEL : 053-355-3872</a>
+            <br>
+            <a href="mailto:marathon@daegusports.or.kr">E-mail : marathon@daegusports.or.kr</a>
+        </address>
+        <span>
+            COPYRIGHTS (C)2020 DAEGU SPORTS COUNCIL ALL RIGHTS RESERVED
+        </span>
+    </footer>
+</body>
+</html>

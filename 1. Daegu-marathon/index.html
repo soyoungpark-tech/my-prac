@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="stylesheet" href="./css/style.css">
 
 <!-- CSS -->
+<link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -22,58 +22,60 @@
 <title>대구국제마라톤</title>
 </head>
 <body>
-
+<div class="wrap">
     <!-- ======================= header ======================= -->
     <header class="header fixed" id="header">
         <div class="header-inner flex">
-            <a href="#">
+            <a href="./index.html">
                 <img src="./img/logo_white.png" alt="logo-img">
             </a>
             <div class="nav__container">
                 <ul class="nav__list flex">
                     <li class="nav__item">
-                        <a href="#" data-link="#home" class="nav__link">
+                        <a href="./pages/guid.html" data-link="#home" class="nav__link">
                             대회안내
                         </a>
                         <div class="nav__submenu">
-                            <a href="#">인사말</a>
-                            <a href="#">후원 및 협력</a>
-                            <a href="#">참가자 유의사항</a>
+                            <a href="./pages/guid.html">인사말</a>
+                            <a href="./pages/guid.html">후원 및 협력</a>
+                            <a href="./pages/guid.html">참가자 유의사항</a>
                         </div>
                     </li>
                     <li class="nav__item">
-                        <a href="#" data-link="#home" class="nav__link">
+                        <a href="./pages/apply.html" data-link="#home" class="nav__link">
                             참가신청
                         </a>
                         <div class="nav__submenu">
-                            <a href="#">참가신청</a>
-                            <a href="#">참가 신청 안내</a>
-                            <a href="#">참가 신청 조회</a>
+                            <a href="./pages/apply.html">참가신청</a>
+                            <a href="./pages/apply.html">참가 신청 안내</a>
+                            <a href="./pages/apply.html">참가 신청 조회</a>
                         </div>
                     </li>
                     <li class="nav__item">
-                        <a href="#" data-link="#home" class="nav__link">
+                        <a href="./pages/course.html" data-link="#home" class="nav__link">
                             코스
                         </a>
                         <div class="nav__submenu">
-                            <a href="#">하프코스</a>
-                            <a href="#">10km</a>
-                            <a href="#">마스터즈 부문</a>
+                            <a href="./pages/course.html">하프코스</a>
+                            <a href="./pages/course.html">10km</a>
+                            <a href="./pages/course.html">마스터즈 부문</a>
                         </div>
                     </li>
                     <li class="nav__item">
-                        <a href="#" data-link="#home" class="nav__link">
+                        <a href="./pages/record.html" data-link="#home" class="nav__link">
                             대회기록
                         </a>
                         <div class="nav__submenu">
-                            <a href="#">기록조회</a>
+                            <a href="./pages/record.html">기록조회</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </div>
     </header>
+    <!-- ========================= banner section ========================= -->
     <section class="banner"></section>
+    <!-- ========================= home section ========================= -->
     <section class="home" id="home">
         <div class="home__container">
             <p>
@@ -89,12 +91,13 @@
             </h2>
         </div>
     </section>
+    <!-- ========================= apply section ========================= -->
     <section class="apply flex main-inner" id="apply">
         <div class="apply__box">
             <img src="./img/apply_img_1.jpg" alt="참가신청안내바로가기" class="apply__img">
             <div class="apply__desc">
                 <p>참가신청안내</p>
-                <a href="#">
+                <a href="./pages/apply.html">
                     바로가기
                 </a>
             </div>
@@ -103,7 +106,7 @@
             <img src="./img/apply_img_2.jpg" alt="참가신청바로하기" class="apply__img">
             <div class="apply__desc apply__semi_blue">
                 <p>참가신청</p>
-                <a href="#">
+                <a href="./pages/apply.html">
                     바로하기
                 </a>
             </div>
@@ -112,27 +115,33 @@
             <img src="./img/apply_img_3.jpg" alt="참가신청조회바로가기" class="apply__img">
             <div class="apply__desc">
                 <p>참가신청조회</p>
-                <a href="#">
+                <a href="./pages/apply.html">
                     바로가기
                 </a>
             </div>
         </div>
     </section>
-
+    <!-- ========================= map section ========================= -->
+    <section class="map main-inner">
+        <h2 class="main-title">코스안내</h2>
+        <img src="./img/marathon_masters_health.jpg" alt="건강달리기코스안내">
+    </section>
+    <!-- ========================= footer ========================= -->
     <footer class="footer" id="footer">
-            <address>
-                주최 : 대구광역시, 대한육상연맹 | 주관 : 대구광역시체육회, 대구육상연맹
-                <br>
-                (41542) 대구 북구 연암로 40(산격동) 113동 1층 대구국제마라톤
-                <br>
-                <a href="tel:053-355-3872">TEL : 053-355-3872</a>
-                <br>
-                <a href="mailto:marathon@daegusports.or.kr">E-mail : marathon@daegusports.or.kr</a>
-            </address>
-            <span>
-                COPYRIGHTS (C)2020 DAEGU SPORTS COUNCIL ALL RIGHTS RESERVED
-            </span>
+        <address>
+            주최 : 대구광역시, 대한육상연맹 | 주관 : 대구광역시체육회, 대구육상연맹
+            <br>
+            (41542) 대구 북구 연암로 40(산격동) 113동 1층 대구국제마라톤
+            <br>
+            <a href="tel:053-355-3872">TEL : 053-355-3872</a>
+            <br>
+            <a href="mailto:marathon@daegusports.or.kr">E-mail : marathon@daegusports.or.kr</a>
+        </address>
+        <span>
+            COPYRIGHTS (C)2020 DAEGU SPORTS COUNCIL ALL RIGHTS RESERVED
+        </span>
     </footer>
+</div>
 
     <!-- <div id="arrowUp" class="flex-center">
         <i class="uil uil-arrow-up"></i>
