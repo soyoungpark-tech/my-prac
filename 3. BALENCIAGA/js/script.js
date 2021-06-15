@@ -9,3 +9,22 @@ $(document).ready(function(){
         autoplaySpeed: 2000,
     });
 });
+
+// nav bar
+$(function(){
+
+    var $navbarItem = $('.navbar__item'),
+        $navbarMenu = $('.navbar__menu'),
+        $subMenu = $('.navbar__submenu');
+    $subMenu.hide();
+
+    $navbarItem.mouseenter(function(){
+        $(this).children('.navbar__submenu').stop().slideDown();
+        $(this) .children('a').addClass('active');
+    });
+    $navbarItem.mouseleave(function(){
+        $(this).children('.navbar__submenu').stop().slideUp();
+    });
+
+
+})

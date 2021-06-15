@@ -1,9 +1,9 @@
 @charset "utf-8";
-/* reset, base */
+/* =================== reset, base =================== */
 :root {
   --primary-color: #0e1111;
   --secondary-color: #ffffff;
-  --hover-color: #ffffff;
+  --hover-color: #7c7c7c;
   --hover-background-color: #0e1111;
   --line-color: #dddddd;
   /* z-index */
@@ -24,6 +24,7 @@
   font-weight: inherit;
   font-size: inherit;
   font-size: 100%;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 a {
   text-decoration: none;
@@ -38,11 +39,12 @@ img {
 }
 button {
   border-style: none;
+  cursor: pointer;
 }
 input {
   border-style: none;
 }
-/* common */
+/* =================== common =================== */
 .flex-center {
   display: flex;
   justify-content: center;
@@ -60,7 +62,7 @@ i {
   border: 1px solid var(--line-color);
   border-radius: 10px;
 }
-/* layout */
+/* =================== layout =================== */
 .main-inner {
   width: 1100px;
   margin: 0 auto;
@@ -77,7 +79,7 @@ footer {
   margin-top: 30px;
 }
 
-/* header */
+/* =================== header =================== */
 .main-logo {
   border-bottom: 1px solid var(--line-color);
 }
@@ -85,30 +87,39 @@ footer {
   width: 260px;
   margin: 10px auto;
 }
-.gnb__container {
+.nav__container {
+  height: 50px;
   width: 1100px;
   margin: 0px auto;
+  z-index: 500;
+  position: relative;
 }
-.gnb {
+.navbar {
   justify-content: space-between;
-  align-items: center;
-  height: 45px;
-  background: var(--secondary-color);
-  width: 100%;
+  margin: 0 auto;
 }
-/* .gnb li:nth-child(1) .icon,
-.gnb li:nth-child(5) .icon{
-    margin-top: -5px;
-} */
-.gnb__subbox {
-  z-index: 300;
+.navbar__item a {
+  z-index: 500;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  line-height: 50px;
+}
+.navbar__item > a:hover.active {
+  font-weight: bold;
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+.navbar__submenu {
   position: absolute;
-  margin-top: var(--margin-2);
-  /* display: none; */
-  border: 1px solid #000;
+  background: var(--secondary-color);
+}
+.navbar__submenu > a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
 }
 
-/* main banner */
+/* =================== main banner =================== */
 /* arrow */
 .slick-prev,
 .slick-next {
@@ -166,13 +177,20 @@ footer {
   border: none;
   background: var(--line-color);
 }
-/* community */
+/* =================== community =================== */
+.community {
+  margin: 0 auto;
+  padding: 60px 0;
+}
 .community > h1 {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: var(--margin-2);
 }
 .community__box {
   flex-wrap: wrap;
+  width: 1300px;
+  margin: 0 auto;
 }
 .community__gallery {
   flex: 1;
@@ -180,7 +198,7 @@ footer {
   margin-right: 20px;
 }
 .community__gallery img {
-  width: 200px;
+  width: 300px;
   margin: 5px;
 }
 .community__desc {
@@ -190,8 +208,8 @@ footer {
   justify-content: start;
 }
 .community__desc_text {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   padding: 25px;
   margin: 5px;
   flex-direction: column;
@@ -203,14 +221,15 @@ footer {
 }
 .community__desc_text:hover {
   transform: translateY(-10px);
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
-/* section second banner */
+/* =================== section second banner =================== */
 .second__banner img {
   width: 100%;
 }
 
-/* section category */
+/* =================== section category =================== */
 .category ul {
   justify-content: space-between;
   text-align: center;
@@ -246,21 +265,17 @@ footer {
   background: rgba(145, 145, 145, 0.288);
   top: 0;
   left: 0;
-  /* opacity: 0; */
-  /* visibility: hidden; */
-  display: none;
+  opacity: 0;
   transition: 0.5s;
 }
 .category ul li:hover:after {
-  /* opacity: 1; */
-  /* visibility: visible; */
-  display: block;
+  opacity: 1;
 }
 .category ul li:hover h2 {
   display: block;
 }
 
-/* section recommend */
+/* =================== section recommend =================== */
 .recommend ul {
   justify-content: space-between;
 }
@@ -280,7 +295,6 @@ footer {
 }
 .recommend ul li span {
   font-size: 1.3rem;
-  /* display: inline; */
   background: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -295,15 +309,19 @@ footer {
 .recommend__desc b:nth-of-type(2) {
   font-size: 1.1rem;
   text-decoration: underline;
+  transition: .3s;
+}
+.recommend__desc b:nth-of-type(2):hover {
+  color: var(--hover-color);
 }
 
-/* section sub-banner */
+/* =================== section sub-banner =================== */
 .sub__banner img {
   width: 100%;
   margin: 30px 0;
 }
 
-/* section online-service */
+/* =================== section online-service =================== */
 .online-service ul {
   justify-content: space-around;
 }
@@ -322,7 +340,7 @@ footer {
   text-align: left;
   font-size: .9rem;
 }
-/* footer */
+/* =================== footer =================== */
 footer ul li {
   flex: 1;
 }

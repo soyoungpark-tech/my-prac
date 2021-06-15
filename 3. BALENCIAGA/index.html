@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="./css/style.css">
 <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
 <!-- jQuery가 js 제일 상단에 위치 -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <!-- JS -->
@@ -25,121 +27,50 @@
             <img src="./img/main-logo.png" alt="main-logo" class="flex">
         </a>
     </div>
-
-
-    <div class="gnb__container">
-        <ul class="gnb flex">
-            <li class="gnb__item">
-                <a href="#" class="gnb__menu">
+    <div class="nav__container">
+        <ul class="navbar flex">
+            <li class="navbar__item">
+                <a href="#" class="navbar__menu">
                     <i class="uil uil-shopping-bag"></i>
                 </a>
             </li>
-            <li class="gnb__item">
-                <a href="#" class="gnb__menu"><b>WOMAN</b></a>
-                <div class="gnb__subbox">
-                    <div class="gnb__subitem-first">
-                        <ul>
-                            <li>
-                                <b>DISCOVER</b>
-                                    <ul>
-                                        <li><a href="#">Newnees</a></li>
-                                        <li><a href="#">Sneakerhead</a></li>
-                                        <li><a href="#">Pride</a></li>
-                                        <li><a href="#">Kids</a></li>
-                                    </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gnb__subitem-second">
-                        <ul>
-                            <li>
-                                <b>READYTOWEAR</b>
-                                    <ul>
-                                        <li><a href="#">Tops & Shits</a></li>
-                                        <li><a href="#">Outerwear</a></li>
-                                        <li><a href="#">Pants & skirts</a></li>
-                                        <li><a href="#">Swimwear</a></li>
-                                        <li><a href="#">Underwear</a></li>
-                                    </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gnb__subitem-third">
-                        <ul>
-                            <li>
-                                <b>SHOES</b>
-                                    <ul>
-                                        <li><a href="#">X-Pander</a></li>
-                                        <li><a href="#">Triple S</a></li>
-                                        <li><a href="#">Track</a></li>
-                                        <li><a href="#">Pumps & Mules</a></li>
-                                        <li><a href="#">Botts</a></li>
-                                    </ul>
-                            </li>
-                        </ul>
-                    </div>
+            <li class="navbar__item">
+                <a href="#" class="navbar__menu">
+                    WOMAN
+                </a>
+                <div class="navbar__submenu">
+                    <a href="#">2021 가을 신상품</a>
+                    <a href="#">상의</a>
+                    <a href="#">데님 & 원피스</a>
+                    <a href="#">운동화 & 펌프스</a>
+                    <a href="#">가방</a>
                 </div>
             </li>
-            <li class="gnb__item">
-                <a href="#" class="gnb__menu"><b>MAN</b></a>
-                <div class="gnb__subbox">
-                    <div class="gnb__subitem-first">
-                        <ul>
-                            <li>
-                                <b>DISCOVER</b>
-                                    <ul>
-                                        <li><a href="#">Newnees</a></li>
-                                        <li><a href="#">Sneakerhead</a></li>
-                                        <li><a href="#">Pride</a></li>
-                                        <li><a href="#">Kids</a></li>
-                                    </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gnb__subitem-second">
-                        <ul>
-                            <li>
-                                <b>READYTOWEAR</b>
-                                    <ul>
-                                        <li><a href="#">Tops & Shits</a></li>
-                                        <li><a href="#">Outerwear</a></li>
-                                        <li><a href="#">Pants & skirts</a></li>
-                                        <li><a href="#">Swimwear</a></li>
-                                        <li><a href="#">Underwear</a></li>
-                                    </ul>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="gnb__subitem-third">
-                        <ul>
-                            <li>
-                                <b>SHOES</b>
-                                    <ul>
-                                        <li><a href="#">X-Pander</a></li>
-                                        <li><a href="#">Triple S</a></li>
-                                        <li><a href="#">Track</a></li>
-                                        <li><a href="#">Pumps & Mules</a></li>
-                                        <li><a href="#">Botts</a></li>
-                                    </ul>
-                            </li>
-                        </ul>
-                    </div>
+            <li class="navbar__item">
+                <a href="#" class="navbar__menu">
+                    MAN
+                </a>
+                <div class="navbar__submenu">
+                    <a href="#">2021 가을 신상품</a>
+                    <a href="#">상의</a>
+                    <a href="#">데님 & 아우터</a>
+                    <a href="#">운동화 & 샌들</a>
+                    <a href="#">가방</a>
                 </div>
             </li>
-            <li class="gnb__item">
-                <a href="#" class="gnb__menu"><b>ALL</b></a>
-                <div class="gnb__subbox">
-                    <div class="gnb__subitem-first">
-                        <ul>
-                            <li>
-                                <a href="#"><b>COLLECTIONS</b></a>
-                            </li>
-                        </ul>
-                    </div>
+            <li class="navbar__item">
+                <a href="#" class="navbar__menu">
+                    COLLECTIONS
+                </a>
+                <div class="navbar__submenu">
+                    <a href="#">2022 spring</a>
+                    <a href="#">2021 winter</a>
+                    <a href="#">2021 fall</a>
+                    <a href="#">2020 winter</a>
                 </div>
             </li>
-            <li class="gnb__item">
-                <a href="#" class="gnb__menu">
+            <li class="navbar__item">
+                <a href="#" class="navbar__menu">
                     <i class="uil uil-search"></i>
                 </a>
             </li>
@@ -148,8 +79,6 @@
 </header>
 <!-- section.mainbanner -->
 <section class="main__banner-box">
-    <!-- <i class="uil uil-angle-left"></i>
-    <i class="uil uil-angle-right"></i> -->
     <div class="main__banner">
         <div>
             <img src="./img/main-banner1.jpg" alt="mainBanner1">
@@ -163,9 +92,9 @@
     </div>
 </section>
 <!-- section.community -->
-<section class="community main-inner" id="community">
+<section class="community" id="community">
     <h1>BALENCIAGA COMMUNITY</h1>
-    <div class="community__box main-inner flex-center">
+    <div class="community__box flex-center">
         <div class="community__gallery">
             <img src="./img/community-img-1.jpg" alt="communityPhoto1">
             <img src="./img/community-img-2.jpg" alt="communityPhoto2">
@@ -209,7 +138,6 @@
     <ul class="flex-center">
         <a href="#">
             <li>
-            <!-- before : AGE -->
                 <img src="./img/category-img-1.jpg" alt="categoryImg1" class="category__before">
                 <h2>AGE</h2>
                 <h1>내 친구들은 어떤 옷을 입을까?</h1>
@@ -217,7 +145,6 @@
         </a>
         <a href="#">
             <li> 
-            <!-- before : SALE -->
                 <img src="./img/category-img-2.jpg" alt="categoryImg2">
                 <h2>SALE</h2>
                 <h1>발렌시아가는 여름 세일 중!</h1>
@@ -225,7 +152,6 @@
         </a>
         <a href="#">
             <li>
-            <!-- before : NEW -->
                 <img src="./img/category-img-3.jpg" alt="categoryImg3">
                 <h2>NEW</h2>
                 <h1>2021 여름 컬렉션 구경하러가기</h1>
@@ -265,14 +191,11 @@
                         <img src="./img/recommend-img-2.jpg" alt="recommendImg2">
                     </a>
                 </div>
-                <!-- after : White Color Box -->
                 <p>
                     TRIPLE S 트레이너 슈즈
                     <br>
                     1,250,000원
                 </p>
-
-            <!-- </a> -->
         </li>
         <li class="flex li-box-style">
             <span>BEST SELLER</span>
@@ -281,9 +204,6 @@
                     <img src="./img/recommend-img-3.jpg" alt="recommendImg3">
                 </a>
             </div>
-            <!-- after : White Color Box -->
-            <!-- after : Black Color Box -->
-            <!-- after : Pink Color Box -->
             <p>
                 SPEED 2.0 스니커즈
                 <br>
