@@ -193,7 +193,7 @@ footer {
 /* =================== community =================== */
 .community {
   margin: 0 auto;
-  padding: 60px 0;
+  padding: 60px;
 }
 .community > h1 {
   text-align: center;
@@ -443,10 +443,10 @@ footer ul li {
 
   /* ======================== header ======================== */
 header {
-  width: 768px;
+  width: 100%;
 }
 .nav__container {
-  width: 768px;
+  width: 100%;
 }
   /* ======================== community ======================== */
   .community__box {
@@ -503,18 +503,7 @@ footer {
 .footer__content {
   display: none;
 }
+}
 /* ========================= Mobile ========================= */
-@media (max-width: 568px){
 
-  /* ====================== Skills ===================== */
-
-  /* ==================== Qualification =============== */
-
-
-  /* ==================== Services =================== */
-
-
-  /* =================== Portfolio ================== */
-
-  /* ===================== Footer =================== */
-
+@media (max-width: 568px){}
