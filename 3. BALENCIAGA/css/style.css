@@ -201,12 +201,13 @@ footer {
   margin-bottom: var(--margin-2);
 }
 .community__box {
-  flex-wrap: wrap;
   width: 1300px;
   margin: 0 auto;
 }
 .community__gallery {
   flex: 1;
+  display: flex;
+  flex-wrap: wrap;
   text-align: right;
   margin-right: 20px;
 }
@@ -502,8 +503,6 @@ footer {
 .footer__content {
   display: none;
 }
-
-
 /* ========================= Mobile ========================= */
 @media (max-width: 568px){
 
