@@ -20,7 +20,7 @@ $(function(){
 
     $navbarItem.mouseenter(function(){
         $(this).children('.navbar__submenu').stop().slideDown();
-        $(this) .children('a').addClass('active');
+        $(this).children('a').addClass('active');
     });
     $navbarItem.mouseleave(function(){
         $(this).children('.navbar__submenu').stop().slideUp();
