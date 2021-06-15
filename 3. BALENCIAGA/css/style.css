@@ -363,9 +363,9 @@ footer ul li {
   position: relative;
   margin-bottom: var(--margin-1);
 }
-/* .mobile_logo_img_white {
+.mobile_logo_img_white {
   display: none;
-} */
+}
 .footer__content:after {
   content: "";
   position: absolute;
