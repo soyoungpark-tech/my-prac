@@ -15,14 +15,14 @@
     /* --hue-color: 205; */
 
 /* ----------------------- colors ----------------------- */
-    --primary-color: hsl(var(--hue-color), 69%, 61%);
-    --primary-color-lighter: hsl(var(--hue-color), 92%, 85%);
-
+    --primary-color:#1d7edf;
+    --primary-color-lighter: #3f97f0;
+    --body-color: #F1F1F1;
     --black-color: #101010;
-    --gray-color: hsl(var(--hue-color), 8%, 45%);
     --white-color: #FFF;
-    --hover-color: #00376E;
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --hover-color: #1d7edf;
+    --border-color: #1862ac;
+    --light-background: #00000099;
 
 /* ----------------------- typography ----------------------- */
 /* font-family: ; */
@@ -65,6 +65,7 @@ body {
     font-size: var(--normal-font-size);
     background-color: var(--body-color);
     color: var(--gray-color);
+    height: 100vh;
 
 }
 h1,h2,h3,h4 {
@@ -96,7 +97,7 @@ button {
 }
 
 /* ========================= reusable, common css ========================= */
-.section__title--wrap {
+/* .section__title--wrap {
     text-align: center;
 }
 .section__title {
@@ -109,33 +110,35 @@ button {
 }
 .header__bg_color {
     background: var(--primary-color);
-}
-/* .button {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 1rem;
-    border-radius: .5rem;
-    font-weight: var(--font-medium);
 } */
-
 /* ========================= layout ========================= */
-.inner {
-    min-width: 340px;
-    max-width: 768px;
+.wrap {
+    padding: 0 12px;
+    max-width: 1140px;
     margin: 0 auto;
-    padding: 3rem 0 5rem;
-}
+  }
+  .inner {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 .flex {
     display: flex;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .main-inner {
     width: 100%;
     padding: 3rem 0 5rem;
     margin: 0 auto;
 }
+.section__margin {
+    margin: var(--mb-3) 0;
+}
 /* ========================= header ========================= */
-/* #header {
+#header {
     position: fixed;
     left: 0;
     top: 0;
@@ -155,6 +158,7 @@ button {
     border: none;
     background: var(--white-color);
 }
+/* ========================= nav bar ========================= */
 .nav__item > a.fixed {
     color: var(--white-color);
 }
@@ -166,52 +170,21 @@ button {
     align-items: center;
     justify-content: space-between;
 }
-.nav__container {
-    margin-left: auto;
-}
-.nav__list {
-    width: 500px;
-    justify-content: space-between;
-}
-.nav__link {
-    color: var(--black-color);
-}
-.nav__item a {
-    width: 100%;
-    text-align: center;
-    line-height: 50px;
-    transition: .4s;
-}
-.nav__item > a {
-    color: var(--black-color);
-    font-weight: var(--font-semi-bold);
-}
-.nav__item a:hover{
-    color: var(--hover-color);
-}
-.nav__item a:hover.active {
-    color: var(--white-color);
-}
 .nav__submenu {
     position: absolute;
-    border: 1px solid #000;
-    background: #000000ad;
     top: 100%;
     left: 0;
     width: 100%;
-    height: 400px;
+    height: auto;
     display: flex;
-    color: var(--white-color);
-    font-size: var(--font-medium);
-    font-weight: var(--font-semi-bold);
-    /* background: var(--primary-color-lighter); }*/
+    background: var(--light-background); 
+}
 
 /* nav full dropdown menu */
 header {
     width: 100%;
 }
 .nav__container {
-    background: red;
     height: 60px;
     line-height: 60px;
 }
@@ -219,44 +192,141 @@ header {
     overflow: hidden;
     width: 960px;
     margin: 0 auto;
-}
-.nav__container ul li {
-    width: 192px;
-    /* display: flex; */
-    float: left;
+    justify-content: space-between;
+    text-align: left;
 }
 .nav__container ul li a {
-    color: var(--hover-color);
     font-size: 20px;
     font-weight: bold;
 }
-.nav__submenu {
-    width: 100%;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    background: rgba(0,0,0,.8);
-}
 .nav__submenu_container {
     overflow: hidden;
-    width: 960px;
+    width: 965px;
+    height: Z;
     margin: 0 auto;
-    padding: 2rem 0;
-}
-.nav__subitem {
-    width: 192px;
-    float: left;
+    padding: 1rem;
+    justify-content: space-between;
 }
 .nav__subitem li {
     padding-bottom: 10px;
 }
 .nav__subitem li a {
-    color: #777;
+    color: var(--white-color);
     font-size: 15px;
 }
+.nav__subitem li a:hover {
+    color: var(--hover-color);
+    text-decoration: underline;
+}
+/* ========================= main banner ========================= */
+.banner__main {
+    margin-top: 45px;
+}
+/* arrow */
+.slick-prev,
+.slick-next {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    font-size: 0;
+    border: none;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+    z-index:K 100;
+}
 
+.slick-prev:after,
+.slick-next:after{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.slick-prev:after,
+.slick-next:after{
+    font-family: unicons-line;
+}
+.slick-prev:after {
+    content: '\ec49';
+}
+.slick-next:after {
+    content: '\eb9f';
+}
 
+/* progress */
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: -2rem;
+}
+/* active된 dot */
+.slick-dots li.slick-active button {
+    background: #fff;
+}
+/* 나머지 dot */
+.slick-dots li button {
+    width: 100px;
+    height: 5px;
+    font-size: 0;
+    border: none;
+    background: #666;
+}
+/* ========================= tab menu ========================= */
+.information__tab {
+    height: 300px;
+    border: 1px solid #000;
+    overflow: hidden;
+}
+.tab__desc {
+    height: 100%;
 
+    background: var(--white-color);
+    padding: var(--mb-2);
+}
+.tab__menu {
+    display: flex;
+    background: var(--light-background);
+}
+.tab__menu a {
+    color: var(--white-color);
+    width: 180px;
+    height: 50px;
+}
+.tab__menu a.selected {
+    background: var(--white-color);
+    color: var(--black-color);
+    border-top: 3px solid var(--border-color);
+}
+/* ========================= information icon ========================= */
+.information__icon {
+    justify-content: space-around;
+    text-align: center;
+}
+.icon__item img {
+    width: 90%;
+    transition: .3s;
+}
+.icon__item h3 {
+    transition: .3s;
+    margin-top: var(--mb-1-5);
+}
+.icon__item:hover img {
+    transform: scale(1.1);
+}
+.icon__item:hover h3 {
+    color: var(--primary-color);
+}
+.cross-icon {
+    width: 115.19px;
+    height: 115.19px;
+}
 
 
