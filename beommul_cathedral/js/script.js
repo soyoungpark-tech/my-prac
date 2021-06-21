@@ -23,22 +23,22 @@ $(function(){
     });
 
 /* ================= tab menu ===================== */
-    var $desc = $('.tab__desc');
+    var $item = $('.tab__item');
     var $tabMenu = $('.tab__menu a');
-    var $secondDesc = $('.tab__desc:nth-of-type(2)')
-    var $thirdDesc = $('.tab__desc:nth-of-type(3)')
+    var $secondItem = $('.tab__item:nth-of-type(2)')
+    var $thirdItem = $('.tab__item:nth-of-type(3)')
     // 초기 세팅
 
-    $secondDesc.hide();
-    $thirdDesc.hide();
+    $secondItem.hide();
+    $thirdItem.hide();
     // $desc.eq(0).show();
-    // $tabMenus
+    // $tabMenu
     $tabMenu.mouseover(function(){
         var idx = $(this).index();
         $tabMenu.removeClass('selected');
         $(this).addClass('selected');
-        $desc.hide();
-        $desc.eq(idx).stop().slideDown();
+        $item.hide();
+        $item.eq(idx).stop().slideDown();
     });
         
 

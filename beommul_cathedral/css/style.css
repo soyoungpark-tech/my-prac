@@ -285,7 +285,7 @@ header {
     border: 1px solid #000;
     overflow: hidden;
 }
-.tab__desc {
+.tab__item {
     height: 100%;
 
     background: var(--white-color);
@@ -305,6 +305,33 @@ header {
     color: var(--black-color);
     border-top: 3px solid var(--border-color);
 }
+/* ========================= tab item ========================= */
+.tab__item {
+    height: 100%;
+    padding-top: var(--mb-2-5);
+    justify-content: space-evenly;
+}
+.tab__desc {
+
+    line-height: 30px;
+    flex: 5;
+}
+.tab__desc ul {
+    list-style: circle;
+}
+.tab__desc ul li {
+    transition: .2s;
+}
+.tab__desc ul li:hover {
+    color: var(--hover-color);
+    border-bottom: 1px solid var(--hover-color);
+}
+.tab__img {
+    flex: 5;
+}
+
+
+
 /* ========================= information icon ========================= */
 .information__icon {
     justify-content: space-around;
