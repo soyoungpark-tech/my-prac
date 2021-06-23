@@ -6,12 +6,6 @@
 :root {
 
 /* ----------------------- main color ----------------------- */
-/* 
-    hsl(hue, saturation, lightness) 
-    hue(색조) : 0 ~ 360 ( 0: 빨간색, 120: 녹색, 240: 파란색 )
-    saturation(채도) : 0 ~ 100 (0: 회색, 100: 원색)
-    lightness(명도) : 0 ~ 100 (0: 검정색, 50: 중간, 100: 흰색)
-*/
     --hue-color: 205;
 
 /* ----------------------- colors ----------------------- */
@@ -93,31 +87,6 @@ img {
 button {
     cursor: pointer;
 }
-
-/* ========================= reusable, common css ========================= */
-.section__title--wrap {
-    text-align: center;
-}
-.section__title {
-    font-size: var(--h1-font-size);
-}
-.section__subtitle {
-    font-size: var(--normal-font-size);
-    color: var(--gray-color);
-    margin-bottom: var(--mb-3);
-}
-.header__bg_color {
-    background: var(--primary-color);
-}
-/* .button {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 1rem;
-    border-radius: .5rem;
-    font-weight: var(--font-medium);
-} */
-
 /* ========================= layout ========================= */
 .inner {
     min-width: 340px;
@@ -130,7 +99,7 @@ button {
 }
 .main-inner {
     width: 100%;
-    padding: 3rem 0 5rem;
+    padding: 1rem 0 5rem;
     margin: 0 auto;
 }
 .main-title {
@@ -145,10 +114,9 @@ button {
     margin-left: var(--mb-1);
 }
 .section__margin {
-    margin-right: 0 auto;
+    margin: 0 auto;
     padding: 5rem 5rem;
 }
-
 /* ========================= header ========================= */
 .wrap {
     background: var(--black-color);
@@ -217,7 +185,6 @@ button {
     /* font-weight: var(--font-semi-bold); */
     background: var(--primary-color-lighter);
 }
-
 /* ========================= banner section ========================= */
 .banner {
     background: url(../img/main-banner.jpg) center/100% no-repeat;
@@ -227,7 +194,6 @@ button {
 }
 /* ========================= home section ========================= */
 .home {
-    /* margin-top: var(--mb-2); */
     color: var(--white-color);
 }
 .home__container {
@@ -258,12 +224,13 @@ button {
     margin: var(--mb-2-5);
     position: relative;
     overflow: hidden;
+    border-radius: 5px;
 }
 .apply__img {
     transition: .4s;
 }
 .apply__box:hover .apply__img {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .apply__desc {
     text-align: center;
@@ -284,6 +251,7 @@ button {
     border: 1px solid var(--white-color);
     padding: var(--mb-0-5);
     transition: .4s;
+    border-radius: 3rem;
 }
 .apply__desc a:hover {
     background: var(--white-color);
@@ -301,18 +269,63 @@ button {
     color: var(--white-color);
     background: var(--primary-color-lighter);
 }
-
 /* ========================= map section ========================= */
-.map h2 {
+.map {
+    max-width: 1270px;
+}
+.main-title {
     color: var(--white-color);
+}
+.map img {
+    width: 600px;
+    margin: 0 1rem;
+    border-radius: 10px;
+}
+/* ========================= notice section ========================= */
+.notice {
+    padding: 2rem 0;
+    background: var(--white-color);
+    color: #000;
+    font-size: 1.5rem;
+}
+.notice__container {
+    margin: 0 auto;
+    max-width: 1270px;
+}
+.notice__desc {
+    flex: 5;
+    margin: 1rem;
+    border-right: 1px solid var(--gray-color);
+}
+.notice__desc h2 {
+    font-size: var(--big-font-size);
+    margin-bottom: var(--mb-1-5);
+}
+.notice__desc ul li {
+    list-style: square;
+    margin: 0 0 var(--mb-1) var(--mb-1);
+}
+.notice__desc ul li a {
+    transition: .3s;
+}
+.notice__desc ul li:hover a {
+    color: var(--primary-color);
+}
+.notice__video {
+    padding: 1rem;
+    flex: 5;
+}
+.notice__video video {
+    width: 100%;
+    border-radius: 5px;
 }
 /* ========================= footer ========================= */
 .footer {
     background: var(--primary-color-lighter);
     color: var(--black-color);
-    /* border-top: 1px solid var(--gray-color); */
     padding: var(--mb-1-5) var(--mb-3);
     font-family: sans-serif;
+    line-height: 2rem;
     font-size: var(--small-font-size);
 }
 address {
